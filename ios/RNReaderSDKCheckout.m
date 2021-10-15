@@ -56,10 +56,6 @@ RCT_REMAP_METHOD(startCheckout,
                  : (RCTPromiseRejectBlock)reject)
 {
     dispatch_async(dispatch_get_main_queue(), ^{
-        if (self.checkoutResolver != nil) {
-            reject(RNReaderSDKUsageError, [RNReaderSDKErrorUtilities createNativeModuleError:RNReaderSDKRNCheckoutAlreadyInProgress debugMessage:RNReaderSDKRNMessageCheckoutAlreadyInProgress], nil);
-            return;
-        }
         NSString *paramError = nil;
         if ([self _validateJSCheckoutParameters:jsParams errorMsg:&paramError] == NO) {
             NSString *paramErrorDebugMessage = [NSString stringWithFormat:@"%@ %@", RNReaderSDKRNMessageCheckoutInvalidParameter, paramError];
