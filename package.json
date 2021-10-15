@@ -2,10 +2,10 @@
   "name": "@meettippy/react-native-square-reader-sdk",
   "version": "1.0.0",
   "description": "A React Native plugin for Square Reader SDK",
-  "homepage": "https://github.com/square/react-native-square-reader-sdk",
+  "homepage": "https://github.com/meettippy/react-native-square-reader-sdk",
   "repository": {
     "type": "git",
-    "url": "https://github.com/square/react-native-square-reader-sdk.git"
+    "url": "https://github.com/meettippy/react-native-square-reader-sdk.git"
   },
   "main": "index.js",
   "scripts": {
